@@ -1,0 +1,20 @@
+@import "function";
+@import "vars";
+
+@mixin h2-titles-param {
+  line-height: toRem(24.2);
+  font-size: toRem(20);
+}
+
+@mixin h3-titles-param {
+  font-size: 20px;
+  line-height: toRem(16.94);
+}
+
+@mixin text-param {
+  font-size: toRem(13);
+  line-height: toRem(15.73);
+  font-weight: 300;
+}
+
+

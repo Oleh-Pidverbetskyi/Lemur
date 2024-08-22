@@ -1,0 +1,67 @@
+.user {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+
+    @include respond-to(lg) {
+      width: 270px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: toRem(12);
+  }
+
+  &__photo-link {
+    width: 107px;
+    height: auto;
+    border-radius: 50%;
+    -webkit-transition: transform 0.8s;
+    -moz-transition: transform 0.8s;
+    -ms-transition: transform 0.8s;
+    -o-transition: transform 0.8s;
+    transition: transform 0.8s;
+    will-change: transform;
+
+    &:hover {
+      -webkit-transform: scale(0.9);
+      -moz-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      -o-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  }
+
+  &__img {
+    width: 107px;
+    height: auto;
+  }
+
+  &__right-block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name-link {
+    text-decoration: none;
+    margin-bottom: 30px;
+    color: #000000;
+    transition: color 0.5s;
+
+    &:hover {
+      color: #2e38ed;
+    }
+  }
+
+  &__name {
+    @include h3-titles-param;
+  }
+
+  &__posts,
+  &__position {
+    @include text-param;
+  }
+}

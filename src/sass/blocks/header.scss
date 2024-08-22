@@ -1,0 +1,34 @@
+.header {
+  background-color: black;
+
+  &__search-box {
+    display: flex;
+    width: toRem(204);
+    justify-content: flex-end;
+
+    @include respond-to(xs) {
+      width: toRem(160);
+    }
+  }
+
+  &__search {
+    width: toRem(40);
+    transition: width 0.4s ease-in-out;
+    background-image: url("../img/search-icon.svg") no-repeat right toRem(10)
+      center;
+    border: toRem(1) solid transparent;
+    padding: toRem(5) toRem(20);
+    cursor: pointer;
+    color: #ffffff;
+
+    &:focus {
+      width: 100%;
+      border: toRem(1) solid #ffffff;
+      color: #ffffff;
+    }
+
+    &::placeholder {
+      color: #ffffff;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.top-block {
+  display: flex;
+  justify-content: space-between;
+  gap: 26px;
+  margin-bottom: 22px;
+
+  @include respond-to(lg) {
+    gap: 15px;
+  }
+  @include respond-to(xm) {
+    justify-content: center;
+    gap: 50px;
+  }
+
+  @include respond-to(680px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}

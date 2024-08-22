@@ -1,0 +1,32 @@
+.banner {
+  width: 368px;
+  height: auto;
+  background-color: #000;
+
+  @include respond-to(lg) {
+    width: 320px;
+  }
+
+  @include respond-to(1284px) {
+    width: 250px;
+  }
+
+  @include respond-to(xm) {
+    width: 284px;
+  }
+
+  @include respond-to(680px) {
+    height: 536px;
+  }
+
+  &__link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,10 @@
+.header-container {
+  padding: toRem(16) toRem(18) toRem(6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include respond-to(xs) {
+    align-items: flex-end;
+  }
+}

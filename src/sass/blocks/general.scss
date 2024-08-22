@@ -1,0 +1,57 @@
+.general {
+  padding: toRem(13) toRem(0) toRem(31);
+
+  &__wrap {
+    display: flex;
+    gap: toRem(34);
+
+    @include respond-to(1284px) {
+      gap: toRem(15);
+    }
+    @include respond-to(xm) {
+      flex-direction: column;
+    }
+  }
+
+  &__left-block {
+    max-width: 612px;
+
+    @include respond-to(xm) {
+      margin: 0 auto;
+    }
+  }
+
+  &__left-block-img-wrap {
+    max-width: 612px;
+    height: auto;
+    margin-bottom: 8px;
+  }
+
+  &__img {
+    max-width: 612px;
+    height: auto;
+    object-fit: cover;
+
+    @include respond-to(680px) {
+      width: 300px;
+      height: auto;
+      margin: 0 auto;
+    }
+  }
+
+  &__left-block-title {
+    @include h2-titles-param;
+    margin-bottom: 7px;
+  }
+
+  &__left-block-text {
+    font-size: 14px;
+    line-height: toRem(16.94);
+    margin-bottom: 20px;
+    font-weight: 300;
+
+    &:nth-child(5) {
+      margin-bottom: 10px;
+    }
+  }
+}

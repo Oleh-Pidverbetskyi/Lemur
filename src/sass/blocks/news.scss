@@ -1,0 +1,38 @@
+.news {
+  &__item {
+    display: flex;
+    gap: 13px;
+    align-items: center;
+    margin-bottom: 35px;
+
+    @include respond-to(680px) {
+      flex-direction: column;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &__title {
+    @include h3-titles-param;
+    margin-bottom: 20px;
+    color: #000000;
+  }
+
+  &__text {
+    @include text-param;
+    color: #000000;
+  }
+
+  &__link-photo {
+    width: 231px;
+    height: 102px;
+  }
+
+  &__img {
+    width: 231px;
+    height: 102px;
+    object-fit: contain;
+  }
+}

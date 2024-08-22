@@ -1,0 +1,26 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  @include respond-to(xm) {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__link {
+    font-family: Inter;
+    font-size: toRem(16);
+    line-height: toRem(19);
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.5s;
+
+    &:hover {
+      color: #2e38ed;
+    }
+  }
+}
